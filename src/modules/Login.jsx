@@ -5,15 +5,15 @@ import { useState, useEffect } from "react";
 const Login = () => {
   const navigate = useNavigate();
 
-  const [count, setCount] = useState(5);
-  const [disable, setDisable] = useState(false);
+  // const [count, setCount] = useState(5);
+  // const [disable, setDisable] = useState(false);
 
-  useEffect(() => {
-    console.log("Login component updating", count);
-    if (count == 10) {
-      setDisable(true);
-    }
-  }, [count]);
+  // useEffect(() => {
+  //   console.log("Login component updating", count);
+  //   if (count == 10) {
+  //     setDisable(true);
+  //   }
+  // }, [count]);
   useEffect(() => {
     console.log("Login component mounting");
     return () => {
@@ -45,12 +45,7 @@ const Login = () => {
       >
         <Typography variant="body1">If you don't have account? </Typography>
         <Button sx={{ mt: 2 }} onClick={() => navigate("/register")}>
-          Register Button
-        </Button>
-      </Box>
-      <Box>
-        <Button disabled={disable} onClick={() => setCount(count + 1)}>
-          Count - {count}
+          Register
         </Button>
       </Box>
     </>
