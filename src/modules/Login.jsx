@@ -45,7 +45,7 @@ const Login = () => {
       >
         <Typography variant="body1">If you don't have account? </Typography>
         <Button sx={{ mt: 2 }} onClick={() => navigate("/register")}>
-          Register
+          Register Button
         </Button>
       </Box>
       <Box>
